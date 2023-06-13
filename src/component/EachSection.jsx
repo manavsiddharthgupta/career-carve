@@ -53,7 +53,7 @@ const EachSection = (props) => {
       {...props.dragProps}
       className="border-b-[1px] border-[#d4d4d4] flex items-center justify-between py-4"
     >
-      <span className="flex items-center gap-1">
+      <span className="flex items-center gap-3">
         <div {...props.dragHandleProps}>
           <MenuIcon />
         </div>
@@ -71,7 +71,7 @@ const EachSection = (props) => {
       ) : (
         <p className="w-full ml-2">{props.section.name}</p>
       )}
-      <span className="flex items-center gap-3">
+      <span className="flex items-center gap-4">
         {inEditMode ? SaveButton : editButton}
         <AntSwitch
           checked={props.section.selected}
