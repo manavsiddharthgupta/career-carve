@@ -4,7 +4,7 @@ const Input = (props) => {
       <input
         value={props.value}
         onChange={props.onChangeHandler}
-        className="outline-none border-[1px] border-black px-2"
+        className="outline-none border-[1px] border-black px-2 max-w-[212px] w-full"
       />
     </div>
   );
