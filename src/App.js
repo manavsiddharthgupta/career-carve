@@ -30,15 +30,13 @@ function App() {
         return sec.id === id;
       });
 
-      console.log(index);
       const filteredSec = { ...state[index] };
-      console.log(filteredSec);
+
       const newAllSectionState = [
         ...state.slice(0, index),
         { ...filteredSec, selected: value },
         ...state.slice(index + 1),
       ];
-      console.log(newAllSectionState);
 
       return [...JSON.parse(JSON.stringify(newAllSectionState))];
     });
